@@ -12,7 +12,7 @@ jobs:
       uses: SamKirkland/FTP-Deploy-Action@v4.3.4
       with:
         server: pospak.site
-        username: 4410028
+        username: 4410028_playground
         password: ${{ secrets.FTP_PASSWORD }}
         protocol: ftp
         port: 21
