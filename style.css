@@ -14,7 +14,7 @@ h1{
 
 @media (max-width: 1080px) {
     .short{
-        display: inline;
+        display: block;
         margin: 0 auto;
     }
     .full{
