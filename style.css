@@ -15,7 +15,7 @@ h1{
 @media (max-width: 1080px) {
     .short{
         display: inline;
-        text-align: center;
+        margin: 0 auto;
     }
     .full{
         display: none;
