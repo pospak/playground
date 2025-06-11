@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1{
+    text-align: center;
+}
+
+.short{
+    display: none;
+}
+
+@media (max-width: 1080px) {
+    .short{
+        display: inline;
+    }
+    .full{
+        display: none;
+    }
+}
