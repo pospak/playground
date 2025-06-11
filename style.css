@@ -31,7 +31,9 @@ h1{
 #hamburger{
     display: none;
 }
-
+.hamcon{
+    display: flex;
+}
 @media (max-width: 1080px) {
     .short,#short{
         display: block;
@@ -43,9 +45,10 @@ h1{
     #hamburger{
         display: block;
         cursor: pointer;
-        width: 20px;
-        height: 20px;
-        border-radius: 10px;
+        width: 30px;
+        height: 30px;
+        border-radius: 5px;
+        margin: 0 auto;
     }
 }
 
