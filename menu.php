@@ -1,9 +1,7 @@
 <header>
 <h1 class="full">Informační systém Vysoké školy polytechnické Jihlava</h1>
 <h1 class="short">IS VŠPJ</h1>
-<div class="hamcon">
-    <img src="/ham.svg" alt="" id="hamburger">
-</div>
+
 
 <nav class="full">
     <ul>
@@ -21,6 +19,9 @@
         
     </ul>
 </nav>
+<div class="hamcon">
+    <img src="/ham.svg" alt="" id="hamburger">
+
 <nav id="short">
     <ul>
         <li><a href="/">Úvod</a></li>
@@ -37,6 +38,7 @@
         
     </ul>
 </nav>
+</div>
 </header>
 
 <script>
