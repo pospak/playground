@@ -64,3 +64,27 @@ main{
     box-shadow: 0 0 10px 5px red;
     border-radius: 10px;
 }
+
+nav{
+    display: flex;
+}
+nav ul{
+    display: block;
+    margin: 0 auto;
+}
+
+nav ul li{
+    list-style-type: none;
+}
+
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-style: italic;
+}
+
+nav ul li a:hover{
+    text-decoration: underline;
+    font-style: normal;
+    transition: all 0.5s;
+}
