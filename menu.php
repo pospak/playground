@@ -1,6 +1,8 @@
 <header>
 <h1 class="full">Informační systém Vysoké školy polytechnické Jihlava</h1>
 <h1 class="short">IS VŠPJ</h1>
+
+<img src="/ham.svg" alt="">
 <nav class="full">
     <ul>
         <li><a href="/">Úvod</a></li>
@@ -17,7 +19,7 @@
         
     </ul>
 </nav>
-<nav class="short">
+<nav class="#short">
     <ul>
         <li><a href="/">Úvod</a></li>
         <li><a href="#">Osobní</a></li>
@@ -34,3 +36,39 @@
     </ul>
 </nav>
 </header>
+
+<script>
+    var profile = document.getElementById("profileLink")
+var profileDropdown = document.getElementById("profileDropdown")
+if(profile && profileDropdown){
+    profileDropdown.style.display = "none";
+profile.addEventListener('mouseenter', function() {
+    profileDropdown.style.display = 'block';
+    
+});
+profile.addEventListener('mouseleave', function() {
+    profileDropdown.style.display = 'none';
+});
+
+}
+
+
+var hamburger = document.getElementById("hamburger");
+var menu = document.getElementById("short");
+ 
+
+    menu.style.display = "none"
+    hamburger.addEventListener("click", function() {
+    menu.style.display = "block"
+    hamburger.addEventListener("click",function(){
+        menu.style.display = "none"
+        window.location.reload();
+       })
+})
+
+
+window.addEventListener("resize",function(){
+    window.location.reload();
+})
+
+</script>

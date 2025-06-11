@@ -20,22 +20,32 @@ h1{
     text-align: center;
 }
 
-.short{
+.short,#short{
     display: none;
     color: white;
 }
+
 .full{
     color: white;
 }
-
+#hamburger{
+    display: none;
+}
 
 @media (max-width: 1080px) {
-    .short{
+    .short,#short{
         display: block;
         margin: 0 auto;
     }
     .full{
         display: none;
+    }
+    #hamburger{
+        display: block;
+        cursor: pointer;
+        width: 20px;
+        height: 20px;
+        border-radius: 10px;
     }
 }
 
@@ -72,10 +82,6 @@ nav{
     display: block;
     margin: 0 auto;
 }
-
-.short ul{
-    
-}
 .full ul li{
     list-style-type: none;
     float: left;
@@ -83,22 +89,94 @@ nav{
     margin: 10px;
 }
 
-.full ul li a,.short ul li a{
+.full ul li a{
     color: white;
     text-decoration: none;
     font-style: italic;
 }
 
-.full ul li a:hover, .short ul li a:hover{
+.full ul li a:hover{
     text-decoration: underline;
     font-style: normal;
     transition: all 0.5s;
 }
 
-.short ul li{
+
+
+#short{
+    box-shadow: 0 0 10px 5px red;
+   
     list-style-type: none;
-    font-weight: bold;
-    margin: 10px;
+    background-color: red;
+    margin: 0;
+    z-index: 1;
+    border-radius: 10px;
+    position:absolute; 
+    width: max-content; 
+}
+
+#short ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: max-content;
     display: block;
-    margin: 0 auto;
+    align-items: center;
+}
+
+#short ul li {
+    width: max-content;
+    margin-bottom: 10px;
+}
+
+
+
+#short ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 10px; /* Added padding for better clickable area */
+    border-radius: 10px; /* Match hover styles */
+    transition: background-color 0.5s;
+}
+
+#short ul li a:hover {
+    background: var(--gradient);
+}
+
+#short ul li.logo {
+    background-color: orange;
+    padding: 10px 20px;
+    margin: 0;
+    align-items: center;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+#short ul li.logo img {
+    display: block;
+    width: 100px;
+    height: 30px;
+}
+
+#short ul li .dropdown {
+    box-shadow: 0 0 10px 5px var(--rgba-color);
+    backdrop-filter: blur(10px);
+    position: absolute;
+    list-style-type: none;
+    padding: 10px;
+    margin: 0;
+    z-index: 1;
+    border-radius: 10px;
+    width: max-content; /* Added rounded corners to dropdown */
+}
+
+#short ul li.dropdown li {
+    width: max-content; /* Set width of dropdown items */
+}
+
+#short ul li .dropdown li a {
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    display: block;
 }
