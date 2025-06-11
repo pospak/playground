@@ -74,8 +74,7 @@ nav{
 }
 
 .short ul{
-    display: block;
-    margin: 0 auto;
+    
 }
 .full ul li{
     list-style-type: none;
@@ -100,10 +99,6 @@ nav{
     list-style-type: none;
     font-weight: bold;
     margin: 10px;
-}
-
-.full ul li a{
-    color: white;
-    text-decoration: none;
-    font-style: italic;
+    display: block;
+    margin: 0 auto;
 }
