@@ -68,11 +68,15 @@ main{
 nav{
     display: flex;
 }
-.full ul, .short ul{
+.full ul{
     display: block;
     margin: 0 auto;
 }
 
+.short ul{
+    display: block;
+    margin: 0 auto;
+}
 .full ul li{
     list-style-type: none;
     float: left;
