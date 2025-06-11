@@ -8,9 +8,10 @@
     <link rel="stylesheet" href="style.css?v=1.03">
 </head>
 <body>
-    <h1 class="full">Informační systém Vysoké školy polytechnické Jihlava</h1>
-    <h1 class="short">IS VŠPJ</h1>
-
+    <?php include "menu.php"?>
+    <main>
+        <h1>Úvod</h1>
+    </main>
 
 </body>
 </html>

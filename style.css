@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+body{
+    margin: 20px;
+}
+
 h1{
     text-align: center;
 }
@@ -20,4 +24,24 @@ h1{
     .full{
         display: none;
     }
+}
+
+
+header{
+    background-color: rgba(229, 157, 157, 0.562);
+    background-image: url("/images/banner.png");
+    background-blend-mode: normal;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+    height: 20vh;
+}
+
+main{
+    border: 0.5px solid red;
+    box-shadow: 0 0 10px 5px red;
+    border-radius: 10px;
+    padding: 5px;
+    height: 70vh;
+
 }
