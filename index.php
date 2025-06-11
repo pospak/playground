@@ -8,11 +8,13 @@
     <link rel="stylesheet" href="style.css?v=1.03">
 </head>
 <body>
-    
-    <?php include "menu.php"?>
+    <div class="shadow">
+        <?php include "menu.php"?>
     <main>
         <h1>Úvod</h1>
     </main>
+    </div>
+    
 
 </body>
 </html>
