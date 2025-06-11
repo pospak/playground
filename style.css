@@ -3,9 +3,17 @@
     padding: 0;
     box-sizing: border-box;
 }
+@font-face {
+    font-family: "Dosis";
+    src: url("/Dosis-VariableFont_wght.ttf");
+  }
 
 body{
     margin: 20px;
+    font-family: Arial, sans-serif;
+    font-family: 'Dosis', sans-serif;
+    color: white;
+    background-color: rgb(39, 0, 0);
 }
 
 h1{
@@ -14,7 +22,12 @@ h1{
 
 .short{
     display: none;
+    color: white;
 }
+.full{
+    color: white;
+}
+
 
 @media (max-width: 1080px) {
     .short{
@@ -28,12 +41,13 @@ h1{
 
 
 header{
-    background-color: rgba(229, 157, 157, 0.562);
-    background-image: url("/images/banner.png");
-    background-blend-mode: color;
+    background-color: red;
+    /* background-image: url("/images/banner.png"); */
+    /* background-blend-mode: color;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: cover; */
     border-radius: 10px;
+    color: white;
     padding: 10px;
     margin: 20px;
     height: 20vh;
