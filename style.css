@@ -68,12 +68,9 @@ main{
 nav{
     display: flex;
 }
-.full ul{
+.full ul, .short ul{
     display: block;
     margin: 0 auto;
-}
-.short ul{
-    display: block;
 }
 
 .full ul li{
