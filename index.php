@@ -8,9 +8,9 @@
     <link rel="stylesheet" href="style.css?v=1.03">
 </head>
 <body>
-    <main>
-    <?php include "menu.php"?>
     
+    <?php include "menu.php"?>
+    <main>
         <h1>Úvod</h1>
     </main>
 
