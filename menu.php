@@ -20,7 +20,7 @@
 <nav class="short">
     <ul>
         <li><a href="/">Úvod</a></li>
-        <li><a href="#">tupýkokot</a></li>
+        <li><a href="#">Osobní</a></li>
         <li><a href="#">Výuka</a></li>
         <li><a href="#">Studium</a></li>
         <li><a href="#">Stipendia</a></li>
