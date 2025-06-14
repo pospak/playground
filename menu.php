@@ -1,10 +1,10 @@
-<header>
-<h1 class="full">Informační systém Vysoké školy polytechnické Jihlava</h1>
-<h1 class="short">IS VŠPJ</h1>
 <?php session_start(); if(!$_SESSION["logged"]){
 header("Location: https://login.pospak.site/login/vspis");
 }
 ?>
+<header>
+<h1 class="full">Informační systém Vysoké školy polytechnické Jihlava</h1>
+<h1 class="short">IS VŠPJ</h1>
 <nav class="full">
     <ul>
         <li><a href="/">Úvod</a></li>
