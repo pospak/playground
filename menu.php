@@ -1,7 +1,4 @@
-<?php session_start(); 
-if(!isset($_SESSION["logged"])){
-header("Location: https://login.pospak.site/login/vspis");
-}
+<?php include "session_check.php";
 ?>
 <header>
 <h1 class="full">Informační systém Vysoké školy polytechnické Jihlava</h1>
