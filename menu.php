@@ -6,7 +6,7 @@ header("Location: https://login.pospak.site/login/vspis");
 <h1 class="short">IS VŠPJ</h1>
 <nav class="full">
     <ul>
-        <li id="profileLink"><a href="#"><?php echo($_SESSION["logged"])?></a></li>
+        <li id="profileLink"><a href="#"><?php echo($_SESSION["logged"])?></a>
         <ul id="profileDropdown" class="dropdown">
                             
                             <li>
@@ -45,7 +45,7 @@ header("Location: https://login.pospak.site/login/vspis");
 
 <nav id="short">
     <ul>
-        <li id="profileLink"><a href="#"><?php echo($_SESSION["logged"])?></a></li>
+        <li id="profileLink"><a href="#"><?php echo($_SESSION["logged"])?></a>
         <ul id="profileDropdown" class="dropdown">
                             
                             <li>
