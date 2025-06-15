@@ -20,7 +20,7 @@ header("Location: https://login.pospak.site/login/vspis");
                                 </a>
                             </li>
                             <li>
-                                <a href="logout">
+                                <a href="/logout.php">
                                     Odhlásit se
                                 </a>
                             </li>
@@ -59,7 +59,7 @@ header("Location: https://login.pospak.site/login/vspis");
                                 </a>
                             </li>
                             <li>
-                                <a href="logout">
+                                <a href="/logout.php">
                                     Odhlásit se
                                 </a>
                             </li>
