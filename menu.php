@@ -10,17 +10,62 @@ echo "<script>window.location.href= 'https://login.pospak.site/login/vspis'</scr
         <ul id="profileDropdown" class="dropdown">
                             
                             <li>
-                                <a href="user/<?= $user ?>">
-                                    Upravit profil
+                                <a href="/user/osobni-informace-studenta/prehled">
+                                    Osobní informace a RC
                                 </a>
                             </li>
                             <li>
-                                <a href="customize/<?= $user ?>">
-                                    Upravit vzhled stránky
+                                <a href="">
+                                    Osobní složka
                                 </a>
                             </li>
                             <li>
-                                <a href="/logout.php">
+                                <a href="">
+                                    Číslo účtu
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    ISIC, ALIVE, školní karta
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    Platby a symboly
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    Nastavení pošty
+                                </a>
+                            </li>
+<li>
+                                <a href="">
+                                    Nastavení Moodlu
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    Nastavení zobrazení jména
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    Ochrana soukromí
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    Schránka důvěry
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    Bezpečnostní testy
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
                                     Odhlásit se
                                 </a>
                             </li>
