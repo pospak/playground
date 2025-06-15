@@ -45,6 +45,27 @@ header("Location: https://login.pospak.site/login/vspis");
 
 <nav id="short">
     <ul>
+        <li id="profileLink"><a href="#"><?php echo($_SESSION["logged"])?></a></li>
+        <ul id="profileDropdown" class="dropdown">
+                            
+                            <li>
+                                <a href="user/<?= $user ?>">
+                                    Upravit profil
+                                </a>
+                            </li>
+                            <li>
+                                <a href="customize/<?= $user ?>">
+                                    Upravit vzhled stránky
+                                </a>
+                            </li>
+                            <li>
+                                <a href="logout">
+                                    Odhlásit se
+                                </a>
+                            </li>
+                        </ul>
+                    
+                    </li>
         <li><a href="/">Úvod</a></li>
         <li><a href="#">Výuka</a></li>
         <li><a href="#">Studium</a></li>
