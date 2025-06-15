@@ -6,8 +6,8 @@ header("Location: https://login.pospak.site/login/vspis");
 <h1 class="short">IS VŠPJ</h1>
 <nav class="full">
     <ul>
+        <li><a href="#"><?php echo($_SESSION["logged"])?></a></li>
         <li><a href="/">Úvod</a></li>
-        <li><a href="#">Osobní</a></li>
         <li><a href="#">Výuka</a></li>
         <li><a href="#">Studium</a></li>
         <li><a href="#">Stipendia</a></li>
@@ -26,7 +26,6 @@ header("Location: https://login.pospak.site/login/vspis");
 <nav id="short">
     <ul>
         <li><a href="/">Úvod</a></li>
-        <li><a href="#">Osobní</a></li>
         <li><a href="#">Výuka</a></li>
         <li><a href="#">Studium</a></li>
         <li><a href="#">Stipendia</a></li>
