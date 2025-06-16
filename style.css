@@ -191,12 +191,11 @@ nav{
     padding: 10px;
     margin: 0;
     z-index: 1;
-    border-radius: 10px;
-    width: max-content; /* Added rounded corners to dropdown */
+    border-radius: 10px; /* Added rounded corners to dropdown */
 }
 
 .full ul li.dropdown li {
-    width: max-content; /* Set width of dropdown items */
+    margin: 10px; /* Set width of dropdown items */
 }
 
 .full ul li .dropdown li a {
