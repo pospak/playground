@@ -118,10 +118,11 @@ nav{
     z-index: 1;
     border-radius: 10px;
 
+
 }
 
 .menu ul li .dropdown li {
-    width: 100%;
+    width: max-content;
     margin-bottom: 10px;
 }
 
