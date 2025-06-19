@@ -6,7 +6,7 @@ echo "<script>window.location.href= 'https://login.pospak.site/login/vspis'</scr
 <h1 class="short">IS VŠPJ</h1>
 <nav class="full">
     <ul>
-        <li id="profileLink"><?php echo($_SESSION["logged"])?>
+        <li id="profileLink"><a href="#"><?php echo($_SESSION["logged"])?></a>
         <ul id="profileDropdown" class="dropdown">
                             
                             <li>
