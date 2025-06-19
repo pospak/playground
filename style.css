@@ -121,7 +121,8 @@ nav{
 }
 
 .menu ul li.dropdown li {
-    width: max-content; /* Set width of dropdown items */
+    width: 100%;
+    margin-bottom: 10px;
 }
 
 .menu ul li .dropdown li a {
