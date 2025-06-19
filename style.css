@@ -78,9 +78,9 @@ main{
     border-radius: 10px;
 }
 
-nav{
+/* nav{
     display: flex;
-}
+} */
 .full ul{
     display: block;
     margin: 0 auto;
