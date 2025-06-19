@@ -117,12 +117,12 @@ nav{
     margin: 0;
     z-index: 1;
     border-radius: 10px;
-
+    width: fit-content;
 
 }
 
 .menu ul li .dropdown li {
-    width: max-content;
+    display: inline;
     margin-bottom: 10px;
 }
 
