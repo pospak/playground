@@ -120,7 +120,7 @@ nav{
 
 }
 
-.menu ul li.dropdown li {
+.menu ul li .dropdown li {
     width: 100%;
     margin-bottom: 10px;
 }
