@@ -42,6 +42,9 @@ h1{
     .menu{
         display: none;
     }
+    .full{
+        display: none;
+    }
     #hamburger{
         display: block;
         cursor: pointer;
@@ -114,7 +117,7 @@ nav{
     margin: 0;
     z-index: 1;
     border-radius: 10px;
-    width: max-content; /* Added rounded corners to dropdown */
+
 }
 
 .menu ul li.dropdown li {
