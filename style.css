@@ -39,7 +39,7 @@ h1{
         display: block;
         margin: 0 auto;
     }
-    .full{
+    .menu{
         display: none;
     }
     #hamburger{
@@ -81,30 +81,30 @@ main{
 nav{
     display: flex;
 }
-.full ul{
+.menu ul{
     display: block;
     margin: 0 auto;
 }
-.full ul li{
+.menu ul li{
     list-style-type: none;
     float: left;
     font-weight: bold;
     margin: 10px;
 }
 
-.full ul li a{
+.menu ul li a{
     color: white;
     text-decoration: none;
     font-style: italic;
 }
 
-.full ul li a:hover{
+.menu ul li a:hover{
     text-decoration: underline;
     font-style: normal;
     transition: all 0.5s;
 }
 
-.full ul li .dropdown {
+.menu ul li .dropdown {
     box-shadow: 0 0 10px 5px red;
     background-color: rgba(255, 0, 0, 0.603);
     backdrop-filter: blur(10px);
@@ -117,11 +117,11 @@ nav{
     width: max-content; /* Added rounded corners to dropdown */
 }
 
-.full ul li.dropdown li {
+.menu ul li.dropdown li {
     width: max-content; /* Set width of dropdown items */
 }
 
-.full ul li .dropdown li a {
+.menu ul li .dropdown li a {
     padding: 10px;
     color: white;
     text-decoration: none;

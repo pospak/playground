@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Úvod - IS VŠPJ</title>
     <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon">
-    <link rel="stylesheet" href="style.css?v=2.02">
+    <link rel="stylesheet" href="style.css?v=2.03">
 </head>
 <body>
     <div class="shadow">

@@ -4,7 +4,7 @@ echo "<script>window.location.href= 'https://login.pospak.site/login/vspis'</scr
 }?>
 <h1 class="full">Informační systém Vysoké školy polytechnické Jihlava</h1>
 <h1 class="short">IS VŠPJ</h1>
-<nav class="full">
+<nav class="menu">
     <ul>
         <li id="profileLink"><a href="#"><?php echo($_SESSION["logged"])?></a>
         <ul id="profileDropdown" class="dropdown">
@@ -133,7 +133,7 @@ var profileDropdown = document.getElementById("profileDropdown")
 if(profile && profileDropdown){
     profileDropdown.style.display = "none";
 profile.addEventListener('mouseenter', function() {
-    profileDropdown.style.display = 'inline-block';
+    profileDropdown.style.display = 'block';
     
 });
 profile.addEventListener('mouseleave', function() {
