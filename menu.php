@@ -65,7 +65,7 @@ echo "<script>window.location.href= 'https://login.pospak.site/login/vspis'</scr
                                 </a>
                             </li>
                             <li>
-                                <a href="">
+                                <a href="/logout.php">
                                     Odhlásit se
                                 </a>
                             </li>
@@ -133,7 +133,7 @@ var profileDropdown = document.getElementById("profileDropdown")
 if(profile && profileDropdown){
     profileDropdown.style.display = "none";
 profile.addEventListener('mouseenter', function() {
-    profileDropdown.style.display = 'block';
+    profileDropdown.style.display = 'inline-block';
     
 });
 profile.addEventListener('mouseleave', function() {
