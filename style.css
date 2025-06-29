@@ -55,7 +55,7 @@ h1{
     }
     .container {  
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr ;
         grid-template-rows: 1fr 1fr 1fr 1fr;
         gap: 5px 5px;
         grid-auto-flow: row;
@@ -250,7 +250,7 @@ nav{
     box-shadow: 0 0 10px 5px red;
 }
   
-  .crerdits { grid-area: credits; 
+  .credits { grid-area: credits; 
     border-radius: 5px;
     padding: 5px;
     box-shadow: 0 0 10px 5px red;
