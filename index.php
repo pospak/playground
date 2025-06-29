@@ -19,7 +19,7 @@
         Zde bude viditelný rozvrh studenta
     </h1>
   </div>
-  <div class="messsages"><h1>
+  <div class="messages"><h1>
     Zde budou viditelné Zprávy v IS
   </h1></div>
   <div class="credits">
