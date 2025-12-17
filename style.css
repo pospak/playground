@@ -1,264 +1,300 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 @font-face {
-    font-family: "Dosis";
-    src: url("/Dosis-VariableFont_wght.ttf");
-  }
-
-body{
-    margin: 20px;
-    font-family: Arial, sans-serif;
-    font-family: 'Dosis', sans-serif;
-    color: black;
-    background-color: #fff1e6;
+  font-family: "Dosis";
+  src: url("/Dosis-VariableFont_wght.ttf");
 }
 
-h1{
-    text-align: center;
+body {
+  margin: 20px;
+  font-family: Arial, sans-serif;
+  font-family: "Dosis", sans-serif;
+  color: black;
+  background-color: #fff1e6;
 }
 
-.short,#short{
-    display: none;
-    color: white;
+h1 {
+  text-align: center;
 }
 
-.full{
-    color: white;
+.short,
+#short {
+  display: none;
+  color: white;
 }
-#hamburger{
-    display: none;
+
+.full {
+  color: white;
 }
-.hamcon{
-    display: flex;
+#hamburger {
+  display: none;
+}
+.hamcon {
+  display: flex;
 }
 @media (max-width: 1080px) {
-    .short,#short{
-        display: block;
-        margin: 0 auto;
-    }
-    .menu{
-        display: none;
-    }
-    .full{
-        display: none;
-    }
-    #hamburger{
-        display: block;
-        cursor: pointer;
-        width: 30px;
-        height: 30px;
-        border-radius: 5px;
-        margin: 0 auto;
-    }
-    .container {  
-        display: grid;
-        grid-template-columns: 1fr ;
-        grid-template-rows: 1fr;
-        gap: 5px 5px;
-        grid-auto-flow: row;
-        grid-template-areas:
-          "timetable"
-          "messages"
-          "credits" /*celkem idc že ta angličtina nesedí ;-)*/
-          "opportunities";
-      }
-      
-}
-
-
-header{
-    background-color: red;
-    /* background-image: url("/images/banner.png"); */
-    /* background-blend-mode: color;
-    background-repeat: no-repeat;
-    background-size: cover; */
-    border-radius: 10px 10px 0 0;
-    color: white;
-    padding: 10px;
-}
-
-main{
-    /* border: 0.5px solid red; */
-    
-    border-radius: 0 0 10px 10px;
-    padding: 10px;
-    height: 100dvh;
-
-}
-
-.shadow{
-    box-shadow: 0 0 10px 5px red;
-    border-radius: 10px;
-}
-
-nav{
-    display: flex;
-}
-.menu ul{
+  .short,
+  #short {
     display: block;
     margin: 0 auto;
-}
-.menu ul li{
-    list-style-type: none;
-    float: left;
-    font-weight: bold;
-    margin: 10px;
+  }
+  .menu {
+    display: none;
+  }
+  .full {
+    display: none;
+  }
+  #hamburger {
+    display: block;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+    margin: 0 auto;
+  }
+  .container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    gap: 5px 5px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "timetable"
+      "messages"
+      "credits" /*celkem idc že ta angličtina nesedí ;-)*/
+      "opportunities";
+  }
 }
 
-.menu ul li a{
-    color: white;
-    text-decoration: none;
-    font-style: italic;
+header {
+  background-color: red;
+  /* background-image: url("/images/banner.png"); */
+  /* background-blend-mode: color;
+    background-repeat: no-repeat;
+    background-size: cover; */
+  border-radius: 10px 10px 0 0;
+  color: white;
+  padding: 10px;
 }
 
-.menu ul li a:hover{
-    text-decoration: underline;
-    font-style: normal;
-    transition: all 0.5s;
+main {
+  /* border: 0.5px solid red; */
+
+  border-radius: 0 0 10px 10px;
+  padding: 10px;
+  height: 100dvh;
+}
+
+.shadow {
+  box-shadow: 0 0 10px 5px red;
+  border-radius: 10px;
+}
+
+nav {
+  display: flex;
+}
+.menu ul {
+  display: block;
+  margin: 0 auto;
+}
+.menu ul li {
+  list-style-type: none;
+  float: left;
+  font-weight: bold;
+  margin: 10px;
+}
+
+.menu ul li a {
+  color: white;
+  text-decoration: none;
+  font-style: italic;
+}
+
+.menu ul li a:hover {
+  text-decoration: underline;
+  font-style: normal;
+  transition: all 0.5s;
 }
 
 .menu ul li .dropdown {
-    box-shadow: 0 0 10px 5px red;
-    background-color: rgba(255, 0, 0, 0.603);
-    backdrop-filter: blur(10px);
-    position: absolute;
-    list-style-type: none;
-    padding: 10px;
-    margin: 0;
-    z-index: 1;
-    border-radius: 10px;
-    width: fit-content;
-
+  box-shadow: 0 0 10px 5px red;
+  background-color: rgba(255, 0, 0, 0.603);
+  backdrop-filter: blur(10px);
+  position: absolute;
+  list-style-type: none;
+  padding: 10px;
+  margin: 0;
+  z-index: 1;
+  border-radius: 10px;
+  width: fit-content;
 }
 
 .menu ul li .dropdown li {
-    display: inline;
-    margin-bottom: 10px;
+  display: inline;
+  margin-bottom: 10px;
 }
 
 .menu ul li .dropdown li a {
-    padding: 10px;
-    color: white;
-    text-decoration: none;
-    display: block;
+  padding: 10px;
+  color: white;
+  text-decoration: none;
+  display: block;
 }
 
-#short{
-    box-shadow: 0 0 10px 5px red;
-   
-    list-style-type: none;
-    background-color: red;
-    margin: 0;
-    z-index: 1;
-    border-radius: 10px;
-    position:absolute; 
-    width: max-content; 
+#short {
+  box-shadow: 0 0 10px 5px red;
+
+  list-style-type: none;
+  background-color: red;
+  margin: 0;
+  z-index: 1;
+  border-radius: 10px;
+  position: absolute;
+  width: max-content;
 }
 
 #short ul {
-    list-style: none;
-    margin: 0 auto;
-    padding: 0;
-    width: max-content;
-    display: block;
-    align-items: center;
+  list-style: none;
+  margin: 0 auto;
+  padding: 0;
+  width: max-content;
+  display: block;
+  align-items: center;
 }
 
 #short ul li {
-    width: max-content;
-    margin-bottom: 10px;
+  width: max-content;
+  margin-bottom: 10px;
 }
 
-
-
 #short ul li a {
-    text-decoration: none;
-    color: white;
-    padding: 10px; /* Added padding for better clickable area */
-    border-radius: 10px; /* Match hover styles */
-    transition: background-color 0.5s;
+  text-decoration: none;
+  color: white;
+  padding: 10px; /* Added padding for better clickable area */
+  border-radius: 10px; /* Match hover styles */
+  transition: background-color 0.5s;
 }
 
 #short ul li a:hover {
-    background: var(--gradient);
+  background: var(--gradient);
 }
 
 #short ul li.logo {
-    background-color: orange;
-    padding: 10px 20px;
-    margin: 0;
-    align-items: center;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
+  background-color: orange;
+  padding: 10px 20px;
+  margin: 0;
+  align-items: center;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
 }
 
 #short ul li.logo img {
-    display: block;
-    width: 100px;
-    height: 30px;
+  display: block;
+  width: 100px;
+  height: 30px;
 }
 
 #short ul li .dropdown {
-    box-shadow: 0 0 10px 5px var(--rgba-color);
-    backdrop-filter: blur(10px);
-    position: absolute;
-    list-style-type: none;
-    padding: 10px;
-    margin: 0;
-    z-index: 1;
-    border-radius: 10px;
-    width: max-content; /* Added rounded corners to dropdown */
+  box-shadow: 0 0 10px 5px var(--rgba-color);
+  backdrop-filter: blur(10px);
+  position: absolute;
+  list-style-type: none;
+  padding: 10px;
+  margin: 0;
+  z-index: 1;
+  border-radius: 10px;
+  width: max-content; /* Added rounded corners to dropdown */
 }
 
 #short ul li.dropdown li {
-    width: max-content; /* Set width of dropdown items */
+  width: max-content; /* Set width of dropdown items */
 }
 
 #short ul li .dropdown li a {
-    padding: 10px;
-    color: white;
-    text-decoration: none;
-    display: block;
+  padding: 10px;
+  color: white;
+  text-decoration: none;
+  display: block;
 }
-.container {  
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-    gap: 10px 10px;
-    grid-auto-flow: row;
-    grid-template-areas:
-      "timetable timetable messages"
-      "timetable timetable messages"
-      "credits credits credits" /*celkem idc že ta angličtina nesedí ;-)*/
-      "opportunities opportunities opportunities";
-  }
-  
-  .timetable {
-    grid-area: timetable;
-    border-radius: 5px;
-    padding: 5px;
-    box-shadow: 0 0 10px 5px red;
-    }
-  
-  .messages { 
-    grid-area: messages;
-    border-radius: 5px;
-    padding: 5px;
-    box-shadow: 0 0 10px 5px red;
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  gap: 10px 10px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "timetable timetable messages"
+    "timetable timetable messages"
+    "credits credits credits" /*celkem idc že ta angličtina nesedí ;-)*/
+    "opportunities opportunities opportunities";
 }
-  
-  .credits { grid-area: credits; 
-    border-radius: 5px;
-    padding: 5px;
-    box-shadow: 0 0 10px 5px red;
-}
-  
-  .opportunities { grid-area: opportunities; 
 
-    border-radius: 5px;
-    padding: 5px;
-    box-shadow: 0 0 10px 5px red;}
-  
+.timetable {
+  grid-area: timetable;
+  border-radius: 5px;
+  padding: 5px;
+  box-shadow: 0 0 10px 5px red;
+}
+
+.messages {
+  grid-area: messages;
+  border-radius: 5px;
+  padding: 5px;
+  box-shadow: 0 0 10px 5px red;
+}
+
+.credits {
+  grid-area: credits;
+  border-radius: 5px;
+  padding: 5px;
+  box-shadow: 0 0 10px 5px red;
+}
+
+.opportunities {
+  grid-area: opportunities;
+
+  border-radius: 5px;
+  padding: 5px;
+  box-shadow: 0 0 10px 5px red;
+}
+
+.message-wrap {
+  display: flex;
+  border: 0.5px solid red;
+  padding: 5px;
+  border-radius: 5px;
+  margin: 10px;
+}
+
+.message-wrap .name {
+  color: black;
+  font-style: bold;
+  font-size: 36pt;
+}
+
+.message-wrap .date {
+  color: grey;
+  font-style: italic;
+  font-size: 10pt;
+}
+
+.message-wrap .text {
+  display: block;
+  justify-content: center;
+  font-size: 12pt;
+}
+
+.message-wrap .profile-photo {
+  width: 20px;
+  height: 20px;
+  border-radius: 50px;
+}
+
+table,
+th,
+td {
+  border: 0.5px solid red;
+}
