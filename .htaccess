@@ -1,0 +1,15 @@
+Options -Indexes
+
+RewriteEngine On
+RewriteBase /
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule !\.(css|js|icon|zip|rar|png|jpg|gif|pdf|#)$ index.php [L]
+
+AddType application/x-httpd-php .php .phtml
+
+<FilesMatch "\.(css|js)$">
+    Header set Cache-Control "max-age=3600, must-revalidate"
+</FilesMatch>
+
