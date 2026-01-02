@@ -35,7 +35,7 @@
         <h1 class="short">IS VŠPJ</h1>
         <nav class="menu">
             <ul>
-                <li id="profileLink"><a href="#"><?php if(User::isLoggedIn()):?><?=$_SESSION["logged"]; else: header("Location: login"); endif;?></a>
+                <li id="profileLink"><a href="#"><?php if(User::isLoggedIn()):?><?=User::getLoggedInUser(); else: header("Location: login"); endif;?></a>
                     <ul id="profileDropdown" class="dropdown">
 
                         <li>

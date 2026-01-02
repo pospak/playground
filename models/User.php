@@ -25,6 +25,7 @@ class User
 
    public static function getLoggedInUser() {
         session_start();
+        return $_SESSION["logged"];
         
     }
     
