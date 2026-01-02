@@ -11,7 +11,7 @@ jobs:
     - name: 📂 Sync files
       uses: SamKirkland/FTP-Deploy-Action@v4.3.4
       with:
-        server: pospak.site
+        server: testing.pospak.me
         username: 4476678
         password: ${{ secrets.FTP_PASSWORD }}
         protocol: ftp
