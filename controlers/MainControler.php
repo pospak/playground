@@ -4,6 +4,7 @@ class MainControler extends Controler
 {
     public function process(array $parameters): void
     {
+        session_start();
 
         $this->head = array(
             "title" => "Úvod",
