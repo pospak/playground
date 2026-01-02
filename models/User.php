@@ -3,7 +3,7 @@ class User
 {
     public static function isLoggedIn() {
         
-        if($_SESSION["logged"]){
+        if(isset($_SESSION["logged"])){
             return true;
         }else{
             return false;
