@@ -11,7 +11,12 @@ class MainControler extends Controler
             "keywords"  => "Main, Úvod"
         );
 
-        $this->view = "main";
+        if(User::isLoggedIn()){
+            $this->view = "main";
+        }else{
+            $this->redirect("login");
+        }
+        
 
         // $connect = mysqli_connect("","us011225","Skorpik444","db011225");
         // $query = "SELECT * FROM posts WHERE public = 1 ORDER BY date DESC";

@@ -12,7 +12,11 @@ class LoginControler extends Controler
             "keywords"  => "Login, Přihlášení"
         );
 
-        $this->view = "login";
+        if(User::isLoggedIn()){
+            $this->redirect("main");
+        }else{
+            $this->view = "login";
+        }
 
         if(isset($_POST["submit"])){
             
@@ -22,7 +26,7 @@ class LoginControler extends Controler
             if($user->login($username,$password)){
                 
                 $_SESSION["logged"] = $username;
-                echo("<script>window.location.href='main'</script>");
+                $this->redirect("main");
             }else{
                 echo("<script>alert('Něco se pokazilo')</script>");
             }

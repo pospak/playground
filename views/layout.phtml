@@ -12,21 +12,6 @@
     <meta name="keywords" content="<?= $keywords ?>" />
     <link rel="stylesheet" href="stylesheets/style.css?v=1.0" type="text/css" />
     <link rel="icon" href="images/favicon.png" type="image/x-icon">
-    <style>
-        .loader-wrapper {
-            position: fixed;
-            top: 0;
-
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(255, 255, 255, 0.7);
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            z-index: 9999;
-        }
-    </style>
 </head>
 
 <body>
@@ -94,7 +79,7 @@
                             </a>
                         </li>
                         <li>
-                            <a href="/logout.php">
+                            <a href="logout">
                                 Odhlásit se
                             </a>
                         </li>
@@ -119,7 +104,7 @@
 
             <nav id="short">
                 <ul>
-                    <li id="profileLink"><a href="#"><?php echo $_SESSION["logged"] ?></a>
+                    <li id="profileLink"><a href="#"><?= User::getLoggedInUser() ?></a>
                         <ul id="profileDropdown" class="dropdown">
 
                             <li>
@@ -133,7 +118,7 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="/logout.php">
+                                <a href="logout">
                                     Odhlásit se
                                 </a>
                             </li>

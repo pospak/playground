@@ -46,5 +46,10 @@ class User
         }
         
     }
+
+    public static function logout(){
+        session_destroy();
+        return true;
+    }
     
 }
