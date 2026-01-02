@@ -20,6 +20,9 @@
         <h1 class="short">IS VŠPJ</h1>
         <nav class="menu">
             <ul>
+                <?php if(User::getLoggedInUser()=="Nepřihlášen"):?>
+                    <p>Nepřihlášen</p>
+                <?php else: ?>
                 <li id="profileLink"><a href="#"><?= User::getLoggedInUser()?></a>
                     <ul id="profileDropdown" class="dropdown">
 
@@ -97,13 +100,18 @@
                 <li><a href="/koleje/prehled-zadosti">Koleje</a></li>
                 <li><a href="#">Ostatní</a></li>
 
-            </ul>
+           <?php endif; ?> 
+        </ul>
         </nav>
         <div class="hamcon">
             <img src="ham.svg" alt="" id="hamburger">
 
             <nav id="short">
-                <ul>
+               
+                <ul> 
+                    <?php if(User::getLoggedInUser()=="Nepřihlášen"):?>
+                    <p>Nepřihlášen</p>
+                <?php else: ?>
                     <li id="profileLink"><a href="#"><?= User::getLoggedInUser() ?></a>
                         <ul id="profileDropdown" class="dropdown">
 
@@ -136,6 +144,7 @@
                     <li><a href="/koleje/prehled-zadosti">Koleje</a></li>
                     <li><a href="#">Ostatní</a></li>
 
+                 <?php endif; ?> 
                 </ul>
             </nav>
         </div>

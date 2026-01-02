@@ -21,7 +21,9 @@ class User
     }
 
    public static function getLoggedInUser() {
-        return $_SESSION["logged"];
+        if(User::isLoggedIn()){
+            return $_SESSION["logged"];
+        }else return "Nepřihlášen";
         
     }
     
