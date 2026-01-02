@@ -1,4 +1,6 @@
-<body>
+<?php if(!User::isLoggedIn()){
+    header("Location: login");
+}?>
     <div class="shadow">
         <main>
             <h1>Úvod</h1>
@@ -119,8 +121,3 @@
             </div>
         </main>
     </div>
-
-
-</body>
-
-</html>

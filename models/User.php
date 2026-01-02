@@ -45,7 +45,6 @@ class User
         //testing purposes only CHANGE IN PRODUCTION
 
         if($username == "pospis65" && $password == "testingPassword"){
-            $_SESSION["logged"] = $username;
             return true;
         }else{
             return false;

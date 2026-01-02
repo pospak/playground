@@ -17,7 +17,14 @@ class LoginControler extends Controler
             
             $username = $_POST["username"];
             $password = $_POST["password"];
-            
+            $user = new User();
+            if($user->login($username,$password)){
+                session_start();
+                $_SESSION["logged"] = $username;
+                echo("<script>window.location.href='main'</script>");
+            }else{
+                echo("<script>alert('Něco se pokazilo')</script>");
+            }
 
         }
 
