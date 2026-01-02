@@ -81,8 +81,7 @@ header {
 }
 
 main {
-  /* border: 0.5px solid red; */
-
+  border: 0.5px solid red; 
   border-radius: 0 0 10px 10px;
   padding: 10px;
   height: 100dvh;
@@ -326,7 +325,6 @@ td {
 }
 
 form{
-
   margin: 0 auto;
   padding: 10px;
   border: 0.5px solid red;
@@ -350,6 +348,7 @@ form input[type="submit"]{
   color: white;
   font-style: italic;
   text-decoration: underline;
+  cursor: pointer;
 }
 
 input[type="submit"]:hover{
