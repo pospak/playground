@@ -48,7 +48,6 @@ return $explodedPath;
 
         
 
-       include "session_check.php";
         $this->view = "layout";
 
 
