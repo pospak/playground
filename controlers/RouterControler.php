@@ -49,7 +49,7 @@ return $explodedPath;
         
 
         $this->view = "layout";
-
+    session_start();
 
 
     }    

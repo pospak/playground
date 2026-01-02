@@ -1,6 +1,4 @@
-<?php if(!User::isLoggedIn()){
-    header("Location: login");
-}?>
+<?php if(!User::isLoggedIn()):?><script>window.location.href="login"</script><?php endif;?>
     <div class="shadow">
         <main>
             <h1>Úvod</h1>

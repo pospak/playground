@@ -3,7 +3,6 @@ class User
 {
     public static function isLoggedIn() {
         
-        session_start();
         if($_SESSION["logged"]){
             return true;
         }else{
@@ -13,18 +12,15 @@ class User
     }
 
     public static function verify() {
-        session_start();
     }
 
     public static function getLoggedInUserType() {
 
-        session_start();
     
                 
     }
 
    public static function getLoggedInUser() {
-        session_start();
         return $_SESSION["logged"];
         
     }
@@ -40,7 +36,6 @@ class User
     }
 
     public static function login($username,$password) {
-        session_start();
 
         //testing purposes only CHANGE IN PRODUCTION
 

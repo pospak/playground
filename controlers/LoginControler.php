@@ -5,6 +5,7 @@ class LoginControler extends Controler
 {
     public function process(array $parameters): void
     {
+        session_start();
         $this->head = array(
             "title" => "Přihlášení",
             "description" => "Přihlášení",
@@ -19,7 +20,7 @@ class LoginControler extends Controler
             $password = $_POST["password"];
             $user = new User();
             if($user->login($username,$password)){
-                session_start();
+                
                 $_SESSION["logged"] = $username;
                 echo("<script>window.location.href='main'</script>");
             }else{
