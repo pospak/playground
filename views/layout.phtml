@@ -10,7 +10,7 @@
     </title>
     <meta name="description" content="<?= $description ?>" />
     <meta name="keywords" content="<?= $keywords ?>" />
-    <link rel="stylesheet" href="stylesheets/style.css?v=1.3" type="text/css" />
+    <link rel="stylesheet" href="stylesheets/style.css?v=1.4" type="text/css" />
     <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
 </head>
 
@@ -20,109 +20,65 @@
         <h1 class="short">IS VŠPJ</h1>
         <nav class="menu">
             <ul>
-                <?php if(User::getLoggedInUser()=="Nepřihlášen"):?>
-                    <p>Nepřihlášen</p>
-                <?php else: ?>
-                <li id="profileLink"><a href="#"><?= User::getLoggedInUser()?></a>
-                    <ul id="profileDropdown" class="dropdown">
-
-                        <li>
-                            <a href="/user/osobni-informace-studenta/prehled">
-                                Osobní informace a RC
-                            </a>
-                        </li>
-                        <li>
-                            <a href="">
-                                Osobní složka
-                            </a>
-                        </li>
-                        <li>
-                            <a href="">
-                                Číslo účtu
-                            </a>
-                        </li>
-                        <li>
-                            <a href="">
-                                ISIC, ALIVE, školní karta
-                            </a>
-                        </li>
-                        <li>
-                            <a href="">
-                                Platby a symboly
-                            </a>
-                        </li>
-                        <li>
-                            <a href="">
-                                Nastavení pošty
-                            </a>
-                        </li>
-                        <li>
-                            <a href="">
-                                Nastavení Moodlu
-                            </a>
-                        </li>
-                        <li>
-                            <a href="">
-                                Nastavení zobrazení jména
-                            </a>
-                        </li>
-                        <li>
-                            <a href="">
-                                Ochrana soukromí
-                            </a>
-                        </li>
-                        <li>
-                            <a href="">
-                                Schránka důvěry
-                            </a>
-                        </li>
-                        <li>
-                            <a href="">
-                                Bezpečnostní testy
-                            </a>
-                        </li>
-                        <li>
-                            <a href="logout">
-                                Odhlásit se
-                            </a>
-                        </li>
-                    </ul>
-
-                </li>
-                <li><a href="/">Úvod</a></li>
-                <li><a href="#">Výuka</a></li>
-                <li><a href="#">Studium</a></li>
-                <li><a href="#">Stipendia</a></li>
-                <li><a href="#">Učitelé</a></li>
-                <li><a href="#">Rozvrh</a></li>
-                <li><a href="/student/szz">SZZ</a></li>
-                <li><a href="#">Závěrečné práce</a></li>
-                <li><a href="/koleje/prehled-zadosti">Koleje</a></li>
-                <li><a href="#">Ostatní</a></li>
-
-           <?php endif; ?> 
-        </ul>
-        </nav>
-        <div class="hamcon">
-            <img src="ham.svg" alt="" id="hamburger">
-
-            <nav id="short">
-               
-                <ul> 
-                    <?php if(User::getLoggedInUser()=="Nepřihlášen"):?>
+                <?php if (User::getLoggedInUser() == "Nepřihlášen"): ?>
                     <p>Nepřihlášen</p>
                 <?php else: ?>
                     <li id="profileLink"><a href="#"><?= User::getLoggedInUser() ?></a>
                         <ul id="profileDropdown" class="dropdown">
 
                             <li>
-                                <a href="user/<?= $user ?>">
-                                    Upravit profil
+                                <a href="/user/osobni-informace-studenta/prehled">
+                                    Osobní informace a RC
                                 </a>
                             </li>
                             <li>
-                                <a href="customize/<?= $user ?>">
-                                    Upravit vzhled stránky
+                                <a href="">
+                                    Osobní složka
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    Číslo účtu
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    ISIC, ALIVE, školní karta
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    Platby a symboly
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    Nastavení pošty
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    Nastavení Moodlu
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    Nastavení zobrazení jména
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    Ochrana soukromí
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    Schránka důvěry
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    Bezpečnostní testy
                                 </a>
                             </li>
                             <li>
@@ -144,12 +100,56 @@
                     <li><a href="/koleje/prehled-zadosti">Koleje</a></li>
                     <li><a href="#">Ostatní</a></li>
 
-                 <?php endif; ?> 
+                <?php endif; ?>
+            </ul>
+        </nav>
+        <div class="hamcon">
+            <img src="ham.svg" alt="" id="hamburger">
+
+            <nav id="short">
+
+                <ul>
+                    <?php if (User::getLoggedInUser() == "Nepřihlášen"): ?>
+                        <p>Nepřihlášen</p>
+                    <?php else: ?>
+                        <li id="profileLink"><a href="#"><?= User::getLoggedInUser() ?></a>
+                            <ul id="profileDropdown" class="dropdown">
+
+                                <li>
+                                    <a href="user/<?= $user ?>">
+                                        Upravit profil
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="customize/<?= $user ?>">
+                                        Upravit vzhled stránky
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="logout">
+                                        Odhlásit se
+                                    </a>
+                                </li>
+                            </ul>
+
+                        </li>
+                        <li><a href="/">Úvod</a></li>
+                        <li><a href="#">Výuka</a></li>
+                        <li><a href="#">Studium</a></li>
+                        <li><a href="#">Stipendia</a></li>
+                        <li><a href="#">Učitelé</a></li>
+                        <li><a href="#">Rozvrh</a></li>
+                        <li><a href="/student/szz">SZZ</a></li>
+                        <li><a href="#">Závěrečné práce</a></li>
+                        <li><a href="/koleje/prehled-zadosti">Koleje</a></li>
+                        <li><a href="#">Ostatní</a></li>
+
+                    <?php endif; ?>
                 </ul>
             </nav>
         </div>
     </header>
-    
+
     <main><br clear="both">
         <?php
         $this->controler->viewListing();
