@@ -303,14 +303,24 @@ td {
 
 .cv{
   border-color:red;
+  background-color: red;
+  color: white;
 }
 
 .pred{
   border-color:green;
+  background-color: green;
+  color: white;
 }
 
 .zruseno{
   border-color:grey;
+  background-color: grey;
+}
+
+.test{
+  border-color: rgb(0, 17, 255);
+  color: white;
 }
 
 .important{
