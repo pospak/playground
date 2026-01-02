@@ -48,6 +48,7 @@ class User
     }
 
     public static function logout(){
+        session_start();        
         session_destroy();
         return true;
     }
