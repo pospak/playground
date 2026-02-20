@@ -4,6 +4,7 @@ class UserControler extends Controler
 {
     public function process(array $parameters): void
     {
+        session_start();
         $connecion = Database::getConnection();
         $query = $connecion->prepare("SELECT * FROM students WHERE login = ?");
         $query->bind_param("s", User::getLoggedInUser());
