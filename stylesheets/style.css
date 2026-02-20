@@ -112,7 +112,7 @@ nav {
   font-style: italic;
 }
 a {
-  color: white;
+  color: black;
   text-decoration: none;
   font-style: italic;
 }
@@ -229,7 +229,7 @@ color: white;
 text-decoration: none;
 display: block;
 }
-.container {
+.mainContainer {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr;
@@ -241,6 +241,18 @@ display: block;
   "credits credits credits" /*celkem idc že ta angličtina nesedí ;-)*/
   "opportunities opportunities opportunities";
 }
+
+.overviewContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 10px 10px;
+  grid-auto-flow: row;
+  grid-template-areas:
+  "personal study"
+  "personal previousStudy"
+}
+
 
 .timetable {
   grid-area: timetable;
@@ -255,6 +267,28 @@ display: block;
   padding: 5px;
   box-shadow: 0 0 10px 5px red;
 }
+
+.personal {
+  grid-area: personal;
+  border-radius: 5px;
+  padding: 5px;
+  box-shadow: 0 0 10px 5px red;
+}
+
+.study {
+  grid-area: study;
+  border-radius: 5px;
+  padding: 5px;
+  box-shadow: 0 0 10px 5px red;
+}
+
+.previousStudy {
+  grid-area: previousStudy;
+  border-radius: 5px;
+  padding: 5px;
+  box-shadow: 0 0 10px 5px red;
+}
+
 
 .credits {
   grid-area: credits;
