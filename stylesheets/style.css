@@ -1,5 +1,5 @@
 :root{
-  --red:rgb(85, 12, 12);
+  --red:rgb(117, 3, 3);
   --green:rgb(1, 48, 1);
   --blue:rgb(5, 13, 122)
 }
@@ -249,7 +249,7 @@ display: block;
   grid-auto-flow: row;
   grid-template-areas:
   "timetable timetable messages"
-  "cvar(--red)its cvar(--red)its cvar(--red)its" /*celkem idc že ta angličtina nesedí ;-)*/
+  "credits credits credits" /*celkem idc že ta angličtina nesedí ;-)*/
   "opportunities opportunities opportunities";
 }
 
