@@ -11,7 +11,7 @@ class UserControler extends Controler
         $get = $query->get_result();
         $result = $get->fetch_assoc();
 
-        $this->view = "overview";
+
         $this->head = array(
             "title" => "Osobní informace studenta",
             "description" => "Přehled uložených informací",
@@ -20,5 +20,6 @@ class UserControler extends Controler
         if ($result) {
             $this->data["data"] = $result;
         }
+        $this->view = "overview";
     }
 }
