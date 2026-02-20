@@ -1,3 +1,9 @@
+:root{
+  --red:rgb(85, 12, 12);
+  --green:rgb(1, 48, 1);
+  --blue:rgb(5, 13, 122)
+}
+
 * {
 margin: 0;
 padding: 0;
@@ -70,7 +76,7 @@ display: none;
 }
 
 header {
-  background-color: red;
+  background-color: var(--red);
   /* background-image: url("/images/banner.png"); */
   /* background-blend-mode: color;
    *    background-repeat: no-repeat;
@@ -81,14 +87,14 @@ header {
 }
 
 main {
-  /* border: 0.5px solid red;  */
+  /* border: 0.5px solid var(--red);  */
   border-radius: 0 0 10px 10px;
   padding: 10px;
   height: 100vh;
 }
 
 .shadow {
-  box-shadow: 0 0 10px 5px red;
+  box-shadow: 0 0 10px 5px var(--red);
   border-radius: 10px;
 }
 
@@ -136,8 +142,8 @@ a:hover {
 }
 
 .menu ul li .dropdown {
-  box-shadow: 0 0 10px 5px red;
-  background-color: rgba(255, 0, 0, 0.603);
+  box-shadow: 0 0 10px 5px var(--red);
+  background-color: rgba(85, 12, 12, 0.603);
   backdrop-filter: blur(10px);
   position: absolute;
   list-style-type: none;
@@ -161,10 +167,10 @@ a:hover {
 }
 
 #short {
-box-shadow: 0 0 10px 5px red;
+box-shadow: 0 0 10px 5px var(--red);
 
 list-style-type: none;
-background-color: red;
+background-color: var(--red);
 margin: 0;
 z-index: 1;
 border-radius: 10px;
@@ -243,7 +249,7 @@ display: block;
   grid-auto-flow: row;
   grid-template-areas:
   "timetable timetable messages"
-  "credits credits credits" /*celkem idc že ta angličtina nesedí ;-)*/
+  "cvar(--red)its cvar(--red)its cvar(--red)its" /*celkem idc že ta angličtina nesedí ;-)*/
   "opportunities opportunities opportunities";
 }
 
@@ -263,35 +269,35 @@ display: block;
   grid-area: timetable;
   border-radius: 5px;
   padding: 5px;
-  box-shadow: 0 0 10px 5px red;
+  box-shadow: 0 0 10px 5px var(--red);
 }
 
 .messages {
   grid-area: messages;
   border-radius: 5px;
   padding: 5px;
-  box-shadow: 0 0 10px 5px red;
+  box-shadow: 0 0 10px 5px var(--red);
 }
 
 .personal {
   grid-area: personal;
   border-radius: 5px;
   padding: 5px;
-  box-shadow: 0 0 10px 5px red;
+  box-shadow: 0 0 10px 5px var(--red);
 }
 
 .study {
   grid-area: study;
   border-radius: 5px;
   padding: 5px;
-  box-shadow: 0 0 10px 5px red;
+  box-shadow: 0 0 10px 5px var(--red);
 }
 
 .previousStudy {
   grid-area: previousStudy;
   border-radius: 5px;
   padding: 5px;
-  box-shadow: 0 0 10px 5px red;
+  box-shadow: 0 0 10px 5px var(--red);
 }
 
 
@@ -299,19 +305,19 @@ display: block;
   grid-area: credits;
   border-radius: 5px;
   padding: 5px;
-  box-shadow: 0 0 10px 5px red;
+  box-shadow: 0 0 10px 5px var(--red);
 }
 
 .opportunities {
   grid-area: opportunities;
   border-radius: 5px;
   padding: 5px;
-  box-shadow: 0 0 10px 5px red;
+  box-shadow: 0 0 10px 5px var(--red);
 }
 
 .message-wrap {
   display: flex;
-  border: 0.5px solid red;
+  border: 0.5px solid var(--red);
   padding: 5px;
   border-radius: 5px;
   margin: 10px;
@@ -345,20 +351,20 @@ table,
 th,
 td {
   text-align:center;
-  border: 0.5px solid red;
+  border: 0.5px solid var(--red);
   padding:10px;
   border-radius:10px;
 }
 
 .cv{
-  border-color:red;
-  background-color: red;
+  border-color:var(--red);
+  background-color: var(--red);
   color: white;
 }
 
 .pred{
-  border-color:green;
-  background-color: green;
+  border-color:rgb(1, 48, 1);
+  background-color: var(--green);
   color: white;
 }
 
@@ -368,13 +374,13 @@ td {
 }
 
 .test{
-  border-color: rgb(0, 17, 255);
-  background-color: rgb(0, 17, 255);
+  border-color: var(--blue);
+  background-color: var(--blue);
   color: white;
 }
 
 .important{
-  color:red;
+  color:var(--red);
 }
 
 
@@ -387,7 +393,7 @@ td {
 form{
   margin: 0 auto;
   padding: 10px;
-  border: 0.5px solid red;
+  border: 0.5px solid var(--red);
   border-radius: 10px;
   color: black;
 }
@@ -395,7 +401,7 @@ form{
 form input[type="text"], input[type="password"]{
   margin: 0 auto;
   padding: 10px;
-  border: 0.5px solid red;
+  border: 0.5px solid var(--red);
   border-radius: 10px;
   color: black;
 }
@@ -403,7 +409,7 @@ form input[type="text"], input[type="password"]{
 form input[type="submit"]{
   margin: 0 auto;
   padding: 10px;
-  background-color: red;
+  background-color: var(--red);
   border-radius: 10px;
   color: white;
   font-style: italic;
