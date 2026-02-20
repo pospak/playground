@@ -1,11 +1,276 @@
 <div class="overviewContainer">
     <div class="personal">
         <h2>Vámi uvedené osobní informace</h2>
+        <div class="gX2">
+            <div>
+                <b>
+                    Titul před jménem
+                </b>
+            </div>
+            <div>
+                <p>
+                    <?= $data["before_name"] ?>
+                </p>
+            </div>
+            <div>
+                <b>
+                    Jméno
+                </b>
+            </div>
+            <div>
+                <p>
+                    <?= $data["first_name"] ?>
+                </p>
+            </div>
+            <div>
+                <b>
+                    Příjmení
+                </b>
+            </div>
+            <div>
+                <b>
+                    Rodné příjmení
+                </b>
+            </div>
+            <div>
+                <p>
+                    <?= $data["birth_last_name"] ?>
+                </p>
+            </div>
+            <div>
+                <p>
+                    <?= $data["last_name"] ?>
+                </p>
+            </div>
+            <div>
+                <b>
+                    Titul za jménem
+                </b>
+            </div>
+            <div>
+                <p>
+                    <?= $data["after_name"] ?>
+                </p>
+            </div>
+            <div>
+                <b>
+                    Rodné číslo/kód
+                </b>
+            </div>
+            <div>
+                <p>
+                    <?= $data["rodne_cislo"] ?>
+                </p>
+            </div>
+            <div>
+                <b>
+                    Datum narození
+                </b>
+            </div>
+            <div>
+                <p>
+                    <?= $data["birth_date"] ?>
+                </p>
+            </div>
+            <div>
+                <b>
+                    Adresa trvalého bydliště
+                </b>
+            </div>
+            <div>
+                <p>
+                    <?= $data["adress"] ?>
+                </p>
+            </div>
+            <div>
+                <b>
+                    Korespondenční adressa
+                </b>
+            </div>
+            <div>
+                <p>
+                    <?php if ($data["mailing_adress"]) {
+                        echo $data["mailing_adress"];
+                    } else {
+                        echo "Trvalé bydliště";
+                    } ?>
+                </p>
+            </div>
+            <div>
+                <b>
+                    Státní občanství
+                </b>
+            </div>
+            <div>
+                <p>
+                    <?= $data["nationality"] ?>
+                </p>
+            </div>
+            <div>
+                <b>
+                    Občanství dle místa narození
+                </b>
+            </div>
+            <div>
+                <p>
+                    <?= $data["nationality"] ?>
+                </p>
+            </div>
+            <div>
+                <b>
+                    Místo narození
+                </b>
+            </div>
+            <div>
+                <p>
+                    <?= $data["place_of_birth"] ?>
+                </p>
+            </div>
+            <div>
+                <b>
+                    Rodinný stav
+                </b>
+            </div>
+            <div>
+                <p>
+                    <?php if ($data["relationships"]) {
+                        echo "V manželství";
+                    } else {
+                        echo "Svobodný/á";
+                    } ?>
+                </p>
+            </div>
+            <div>
+                <b>
+                    Telefon
+                </b>
+            </div>
+            <div>
+                <p>
+                    <?= $data["phone"] ?>
+                </p>
+            </div>
+            <div>
+                <b>
+                    Email
+                </b>
+            </div>
+            <div>
+                <p>
+                    <?= $data["email"] ?>
+                </p>
+            </div>
+            <div>
+                <b>
+                    Datová schránka
+                </b>
+            </div>
+            <div>
+                <p>
+                    <?= $data["datovka"] ?>
+                </p>
+            </div>
+            <div>
+                <b>
+                    Číslo účtu - Banka
+                </b>
+            </div>
+            <div>
+                <p>
+                    <?= $data["acc_number"] ?>
+                </p>
+            </div>
+            <div>
+                <b>
+                    Specifický symbol
+                </b>
+            </div>
+            <div>
+                <p>
+                    <?= $data["spec_symbol"] ?>
+                </p>
+            </div>
+        </div>
     </div>
     <div class="study">
         <h2>Informace o studiu</h2>
+        <div class="gX2">
+            <div>
+                <b>
+                    Identifikátor studia (RC)
+                </b>
+            </div>
+            <div>
+                <p>
+                    <?= $data["rc"] ?>
+                </p>
+            </div>
+            <div>
+                <b>
+                    Školní email
+                </b>
+            </div>
+            <div>
+                <p>
+                    <?= $data["school_email"] ?>
+                </p>
+            </div>
+            <div>
+                <b>
+                    Program / Obor - forma studia - semestr studia
+                </b>
+            </div>
+            <div>
+                <p>
+                    <?= $data["field_of_study"] ?>
+                </p>
+            </div>
+            <div>
+                <b>
+                    Doporučený studijní plán (DPS)
+                </b>
+            </div>
+            <div>
+                <p>
+                    <?= $data["dps"] ?>
+                </p>
+            </div>
+        </div>
+
     </div>
     <div class="previousStudy">
         <h2>Informace o uvedeném předchozím studiu</h2>
+        <div class="gX2">
+            <div>
+                <b>
+                    Dosažené vzdělání
+                </b>
+            </div>
+            <div>
+                <p>
+                    <?= $data["reached_edu"] ?>
+                </p>
+            </div>
+            <div>
+                <b>
+                    Škola (IZO)
+                </b>
+            </div>
+            <div>
+                <p>
+                    <?= $data["school"] ?>
+                </p>
+            </div>
+            <div>
+                <b>
+                    Rok maturitní zkoušky
+                </b>
+            </div>
+            <div>
+                <p>
+                    <?= $data["maturita_year"] ?>
+                </p>
+            </div>
+        </div>
     </div>
 </div>
