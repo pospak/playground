@@ -245,7 +245,7 @@ display: block;
   grid-template-areas:
   "timetable timetable messages"
   "credits credits credits" /*celkem idc že ta angličtina nesedí ;-)*/
-  "opportunities opportunities opportunities";
+  /*"opportunities opportunities opportunities";*/
 }
 
 .overviewContainer {
