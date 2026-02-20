@@ -129,6 +129,13 @@ a {
   font-style: italic;
 }
 
+.rozvrh {
+  color: white;
+  text-decoration: none;
+  font-style: italic;
+}
+
+
 .menu ul li a:hover {
   text-decoration: underline;
   font-style: normal;
